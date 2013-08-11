@@ -5,7 +5,7 @@
 OCAML_URL=http://caml.inria.fr/pub/distrib/ocaml-4.00/ocaml-4.00.1.tar.gz
 
 # create a scratch directory
-D=$(mktemp -d c9-ocaml-XXX)
+D=$(mktemp --tmpdir -d c9-ocaml-XXX)
 pushd $D
 
 # download & extract OCaml
